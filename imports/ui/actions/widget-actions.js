@@ -1,4 +1,4 @@
-import Widgets from '../../api/widgets';
+import Widgets from '../../Methods/widgets';
 
 function getWidgets() {  
   return async function(dispatch) {
