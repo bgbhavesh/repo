@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute } from 'react-router';
+import { Router, Route, IndexRoute, Link } from 'react-router';
 import Authenticated from '../Authenticated/Authenticated';
 import App from '../ui/App'
 const browserHistory = createBrowserHistory();
@@ -15,8 +15,8 @@ function AlreadyLoggedIn(nextState, replace, callback) {
 
 const Routers = (props) => (
   <Router history={browserHistory}>
-    <Route path="/"  >
-    <IndexRoute  component={App} />
+    <Route path="/" component={App} >
+    {/* <IndexRoute  component={App} /> */}
     </Route>
   </Router>
 );
