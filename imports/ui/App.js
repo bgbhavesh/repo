@@ -5,11 +5,14 @@ import { connect } from 'react-redux';
 import widgetActionCreators from './actions/widget-actions';
 
 class App extends React.Component {
-
+  componentWillMount(){
+    console.log(this.props)
+  }
   componentDidMount() {
     const { widgetActions } = this.props;
 
     widgetActions.getWidgets();
+    console.log(this.props)
   }
 
   handleForm(e) {
