@@ -17,6 +17,7 @@ function AlreadyLoggedIn(nextState, replace, callback) {
 ///////////login criteria
 /////////////////////////containers
 import App from '../ui/App'
+import LoginPage from '../ui/common/LoginPage';
 /////////////////////////containers
 ///////////////////////////////layout
 import BlankHeader from '../ui/common/layout/BlankHeader';
@@ -27,8 +28,10 @@ import {BasicLayout} from '../ui/common/layout/BasicLayout';
 ////////////////////// Routers
 const Routers = (props) => (
   <BrowserRouter>
-  <div className="">
+  <div className="routes-block">
     <BasicLayout path='/test' component={App}/>
+    <BasicLayout path='/login' component={LoginPage}/>
+    
     <Route exact path="/" render={props =><App {...props}/>}/>
     <Route exact path="/App" render={props =><App {...props}/>}>
     {/* <IndexRoute  component={App} /> */}
