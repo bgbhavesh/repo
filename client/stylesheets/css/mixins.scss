@@ -1,0 +1,201 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin primary-ellipses {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin primary-flex {
+    display: flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin placeholder {
+     ::-webkit-input-placeholder {
+        @content
+    }
+     :-moz-placeholder {
+        @content
+    }
+     ::-moz-placeholder {
+        @content
+    }
+     :-ms-input-placeholder {
+        @content
+    }
+}
+
+@mixin transition($transition...) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+    /*@include transition(background-color 1s .5s, color 2s);*/
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+}
+
+
+/*transform animation*/
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    transform: $transform;
+}
+
+// variables
+$num-of-tabs: 2;
+$tabs-header-width: 100% / $num-of-tabs;
+@mixin tabs {
+    @for $i from 1 through $num-of-tabs {
+        &:nth-of-type(#{$i}) {
+            &.swiper-pagination-bullet-active {
+                ~.active-mark {
+                    left: $tabs-header-width * ($i - 1);
+                }
+            }
+        }
+    }
+}
+
+@mixin page-anim {
+    @keyframes anim {
+        0% {
+            display: none;
+            opacity: 0;
+        }
+        1% {
+            display: block;
+            opacity: 0;
+            transform: scale(0);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    @-webkit-keyframes anim {
+        0% {
+            display: none;
+            opacity: 0;
+        }
+        1% {
+            display: block;
+            opacity: 0;
+            transform: scale(0);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    @-moz-keyframes anim {
+        0% {
+            display: none;
+            opacity: 0;
+        }
+        1% {
+            display: block;
+            opacity: 0;
+            transform: scale(0);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    @-o-keyframes anim {
+        0% {
+            display: none;
+            opacity: 0;
+        }
+        1% {
+            display: block;
+            opacity: 0;
+            transform: scale(0);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+@mixin page-animation {
+    animation: anim .3s ease-in-out;
+    -webkit-animation: anim .3s ease-in-out;
+    -moz-animation: anim .3s ease-in-out;
+    -o-animation: anim .3s ease-in-out;
+    transform: scale(1);
+    opacity: 1;
+}
+
+@mixin card-rotate {
+    @keyframes cards {
+        0% {
+            transform: rotateY( 0deg);           
+        }
+        50% {
+            transform: rotateY( 180deg);
+        }
+        100% {
+            transform: rotateY( 360deg);
+        }
+    }
+    @-webkit-keyframes anim {
+        0% {
+            transform: rotateY( 0deg);
+            -webkit-transform: rotateY( 0deg);
+        }
+        50% {
+            transform: rotateY( 180deg);
+            -webkit-transform: rotateY( 180deg);
+        }
+        100% {
+            transform: rotateY( 360deg);
+            -webkit-transform: rotateY( 360deg);
+        }
+    }
+    @-moz-keyframes anim {
+        0% {
+            transform: rotateY( 0deg);
+        }
+        50% {
+            transform: rotateY( 180deg);
+        }
+        100% {
+            transform: rotateY( 360deg);
+        }
+    }
+    @-o-keyframes anim {
+        0% {
+            transform: rotateY( 0deg);
+        }
+        50% {
+            transform: rotateY( 180deg);
+        }
+        100% {
+            transform: rotateY( 360deg);
+        }
+    }
+}

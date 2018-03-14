@@ -1,0 +1,334 @@
+@font-face {
+  font-family: 'DINPro-Regular';
+  src: url('/fonts/DINPro-Regular.eot?#iefix') format('embedded-opentype'),  url('/fonts/DINPro-Regular.otf')  format('opentype'),
+	     url('/fonts/DINPro-Regular.woff') format('woff'), url('/fonts/DINPro-Regular.ttf')  format('truetype'), url('/fonts/DINPro-Regular.svg#DINPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINPro-Bold';
+  src: url('/fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),  url('/fonts/DINPro-Bold.otf')  format('opentype'),
+	     url('/fonts/DINPro-Bold.woff') format('woff'), url('/fonts/DINPro-Bold.ttf')  format('truetype'), url('/fonts/DINPro-Bold.svg#DINPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINPro-Medium';
+  src: url('/fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),  url('/fonts/DINPro-Medium.otf')  format('opentype'),
+	     url('/fonts/DINPro-Medium.woff') format('woff'), url('/fonts/DINPro-Medium.ttf')  format('truetype'), url('/fonts/DINPro-Medium.svg#DINPro-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FieldRepo';
+  src:  url('fonts/FieldRepo.eot?fxk9nz');
+  src:  url('fonts/FieldRepo.eot?fxk9nz#iefix') format('embedded-opentype'),
+    url('fonts/FieldRepo.woff2?fxk9nz') format('woff2'),
+    url('fonts/FieldRepo.ttf?fxk9nz') format('truetype'),
+    url('fonts/FieldRepo.woff?fxk9nz') format('woff'),
+    url('fonts/FieldRepo.svg?fxk9nz#FieldRepo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'FieldRepo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fr-HQ:before {
+  content: "\e918";
+  color: #ed1c24;
+}
+.fr-Library:before {
+  content: "\e91f";
+  color: #ed1c24;
+}
+.fr-RM:before {
+  content: "\e931";
+  color: #ed1c24;
+}
+.fr-Total_sales:before {
+  content: "\e941";
+  color: #ed1c24;
+}
+.fr-add_Customer:before {
+  content: "\e900";
+  color: #ed1c24;
+}
+.fr-appointment_listing:before {
+  content: "\e901";
+  color: #ed1c24;
+}
+.fr-calendar:before {
+  content: "\e902";
+  color: #ed1c24;
+}
+.fr-campaigns:before {
+  content: "\e904";
+  color: #ed1c24;
+}
+.fr-campaigns_input:before {
+  content: "\e903";
+  color: #ed1c24;
+}
+.fr-cancelled_appointment:before {
+  content: "\e905";
+  color: #ed1c24;
+}
+.fr-chemist:before {
+  content: "\e906";
+  color: #ed1c24;
+}
+.fr-collapse:before {
+  content: "\e946";
+  color: #ed1c24;
+}
+.fr-completed_Appointment_save:before {
+  content: "\e907";
+  color: #ed1c24;
+}
+.fr-current_location:before {
+  content: "\e908";
+  color: #ed1c24;
+}
+.fr-customer_name:before {
+  content: "\e909";
+  color: #ed1c24;
+}
+.fr-customers_RM:before {
+  content: "\e90a";
+  color: #ed1c24;
+}
+.fr-date_frequency:before {
+  content: "\e90b";
+  color: #ed1c24;
+}
+.fr-distance:before {
+  content: "\e90c";
+  color: #ed1c24;
+}
+.fr-doctor:before {
+  content: "\e90d";
+  color: #ed1c24;
+}
+.fr-duration:before {
+  content: "\e90e";
+  color: #ed1c24;
+}
+.fr-e-learning:before {
+  content: "\e90f";
+  color: #ed1c24;
+}
+.fr-en-d_flag:before {
+  content: "\e910";
+  color: #ed1c24;
+}
+.fr-expand:before {
+  content: "\e911";
+  color: #ed1c24;
+}
+.fr-expense:before {
+  content: "\e912";
+  color: #ed1c24;
+}
+.fr-favorite:before {
+  content: "\e913";
+  color: #ed1c24;
+}
+.fr-filter:before {
+  content: "\e914";
+  color: #ed1c24;
+}
+.fr-gifts:before {
+  content: "\e915";
+  color: #ed1c24;
+}
+.fr-home:before {
+  content: "\e916";
+  color: #ed1c24;
+}
+.fr-hospital:before {
+  content: "\e917";
+  color: #ed1c24;
+}
+.fr-imp_appointment:before {
+  content: "\e919";
+  color: #ed1c24;
+}
+.fr-information:before {
+  content: "\e91a";
+  color: #ed1c24;
+}
+.fr-institues:before {
+  content: "\e91b";
+  color: #ed1c24;
+}
+.fr-inventory:before {
+  content: "\e91c";
+  color: #ed1c24;
+}
+.fr-jointwork:before {
+  content: "\e91d";
+  color: #ed1c24;
+}
+.fr-last_visit:before {
+  content: "\e91e";
+  color: #ed1c24;
+}
+.fr-likes:before {
+  content: "\e920";
+  color: #ed1c24;
+}
+.fr-list_of_files:before {
+  content: "\e921";
+  color: #ed1c24;
+}
+.fr-location:before {
+  content: "\e922";
+  color: #ed1c24;
+}
+.fr-meeting:before {
+  content: "\e923";
+  color: #ed1c24;
+}
+.fr-message:before {
+  content: "\e924";
+  color: #ed1c24;
+}
+.fr-more:before {
+  content: "\e925";
+  color: #ed1c24;
+}
+.fr-newsfeed:before {
+  content: "\e926";
+  color: #ed1c24;
+}
+.fr-no_of_visit:before {
+  content: "\e927";
+  color: #ed1c24;
+}
+.fr-notification:before {
+  content: "\e928";
+  color: #ed1c24;
+}
+.fr-offline_download:before {
+  content: "\e929";
+  color: #ed1c24;
+}
+.fr-orders:before {
+  content: "\e92a";
+  color: #ed1c24;
+}
+.fr-over_night:before {
+  content: "\e92b";
+  color: #ed1c24;
+}
+.fr-playlist:before {
+  content: "\e92c";
+  color: #ed1c24;
+}
+.fr-profile_awards:before {
+  content: "\e92d";
+  color: #ed1c24;
+}
+.fr-quantity:before {
+  content: "\e92e";
+  color: #ed1c24;
+}
+.fr-re_scheduled_appointment:before {
+  content: "\e92f";
+  color: #ed1c24;
+}
+.fr-reports_forms:before {
+  content: "\e930";
+  color: #ed1c24;
+}
+.fr-route:before {
+  content: "\e932";
+  color: #ed1c24;
+}
+.fr-search:before {
+  content: "\e933";
+  color: #ed1c24;
+}
+.fr-sort:before {
+  content: "\e934";
+  color: #ed1c24;
+}
+.fr-star_rating:before {
+  content: "\e935";
+  color: #ed1c24;
+}
+.fr-start_end_trip:before {
+  content: "\e936";
+  color: #ed1c24;
+}
+.fr-start_flag:before {
+  content: "\e937";
+  color: #ed1c24;
+}
+.fr-status_Yet_to_start:before {
+  content: "\e938";
+  color: #ed1c24;
+}
+.fr-summary:before {
+  content: "\e939";
+  color: #ed1c24;
+}
+.fr-total_Appointment:before {
+  content: "\e93a";
+  color: #ed1c24;
+}
+.fr-total_audio:before {
+  content: "\e93b";
+  color: #ed1c24;
+}
+.fr-total_doc:before {
+  content: "\e93c";
+  color: #ed1c24;
+}
+.fr-total_excel_lxs:before {
+  content: "\e93d";
+  color: #ed1c24;
+}
+.fr-total_inventory:before {
+  content: "\e93e";
+  color: #ed1c24;
+}
+.fr-total_pdf:before {
+  content: "\e93f";
+  color: #ed1c24;
+}
+.fr-total_ppt:before {
+  content: "\e940";
+  color: #ed1c24;
+}
+.fr-total_video:before {
+  content: "\e942";
+  color: #ed1c24;
+}
+.fr-view:before {
+  content: "\e944";
+  color: #ed1c24;
+}
+.fr-view_dashboard:before {
+  content: "\e943";
+  color: #ed1c24;
+}
+.fr-wifi:before {
+  content: "\e945";
+  color: #ed1c24;
+}

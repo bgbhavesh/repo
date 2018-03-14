@@ -1,0 +1,30 @@
+{
+    "public":{
+        "aws": {
+            "baseURL": "https://s3.raksan.in/",
+            "bucket": "frepo-frqa",
+            "region":"us-east-1"
+        },
+        "GoogleApiKey":"AIzaSyDZROO7fsiFnBTpBagjHGFOG-FnYrEbm7M",
+        "CDNUrl":"https://s3.raksan.in/frepo-public-images/",
+        "CDNBucket":"frepo-public-images",
+    },
+    "private":{
+        "CDNUrl":"https://s3.raksan.in/frepo-public-images/",
+        "CDNBucket":"frepo-public-images",
+        "aws": {
+            "accessKey": "rakSan$3buckEtaccEss",
+            "secretAccessKey": "Raksan$36u(ket#s#cret",
+            "awsEnabled": true,
+            "imageMaxSizeInKb": 1024,
+            "bucketUrl":"https://s3.raksan.in/frepo-frqa",
+            "bucket": "frepo-frqa"
+        },
+        "smtp":{
+            "username":"stats@fieldeagles.com",
+            "password":"RakSan987",
+            "server":"smtp.raksan.in",
+            "port":"25"
+        }
+    }
+}

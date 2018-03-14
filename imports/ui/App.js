@@ -1,7 +1,6 @@
 import React from 'react';  
 import { bindActionCreators } from 'redux';  
 import { connect } from 'react-redux';
-
 import widgetActionCreators from './actions/widget-actions';
 
 class App extends React.Component {
@@ -29,7 +28,7 @@ class App extends React.Component {
     const { widgets, widgetActions } = this.props;
 
     return (
-      <div>
+      <div className="main-container theme-dark">
         <h1>widgets</h1>
         <ul>
           { widgets

@@ -16,7 +16,7 @@ Meteor.startup(() => {
     <Provider store={store}>
      <Routers/>
     </Provider>,
-    document.getElementById('app')
+    document.getElementById('render-target')
   );
 });
 
